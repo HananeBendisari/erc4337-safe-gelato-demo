@@ -1,0 +1,17 @@
+# Node
+node_modules
+.env
+
+# Build
+dist
+out
+cache
+
+# Foundry / Forge
+artifacts
+broadcast
+cache
+lib
+
+# Misc
+*.log

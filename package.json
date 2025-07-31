@@ -1,0 +1,36 @@
+{
+  "name": "erc4337-safe-gelato-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HananeBendisari/erc4337-safe-gelato-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/HananeBendisari/erc4337-safe-gelato-demo/issues"
+  },
+  "homepage": "https://github.com/HananeBendisari/erc4337-safe-gelato-demo#readme",
+  "dependencies": {
+    "@safe-global/protocol-kit": "^6.1.0",
+    "@safe-global/safe-core-sdk": "^3.3.5",
+    "axios": "^1.11.0",
+    "chalk": "^5.4.1",
+    "dotenv": "^17.2.1",
+    "figlet": "^1.8.2",
+    "prompts": "^2.4.2",
+    "viem": "^2.33.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

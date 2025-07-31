@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    // Target ECMAScript version (modern async/await, BigInt, etc.)
+    "target": "es2020",
+
+    // Module system used for imports/exports (Node.js compatible)
+    "module": "commonjs",
+
+    // Allow default imports from CommonJS modules
+    "esModuleInterop": true,
+
+    // Enable strict type checking (good practice)
+    "strict": true,
+
+    // Skip type checking of external packages (faster builds)
+    "skipLibCheck": true,
+
+    // Where compiled .js files will be placed
+    "outDir": "dist",
+
+    // Allows importing compiled JSON (e.g., ABI + bytecode from Foundry)
+    "resolveJsonModule": true
+  },
+
+  // Folders to include in TypeScript compilation
+  "include": ["scripts", "src"]
+}
