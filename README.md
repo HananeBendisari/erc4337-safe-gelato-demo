@@ -14,10 +14,16 @@ A complete implementation of ERC-4337 (Account Abstraction) using Safe 1/1 with 
 
 **COMPLETE** - 3/3 UserOperations fully implemented + 1 bonus
 
-- **Safe 1/1 deployed** on Sepolia: [`0xA99187fbBdbE75AD71710830B29d8a0a3eE90d17`](https://sepolia.etherscan.io/address/0xA99187fbBdbE75AD71710830B29d8a0a3eE90d17)
-- **3/3 UserOperations** implemented (3 required + 1 bonus)
+## Deployed Contracts
+
+### Core Contracts
+- **Safe 1/1 with ERC4337 module**: [`0xA99187fbBdbE75AD71710830B29d8a0a3eE90d17`](https://sepolia.etherscan.io/address/0xA99187fbBdbE75AD71710830B29d8a0a3eE90d17)
 - **Counter Contract**: [`0x23f47e4f855b2e4f1bbd8815b333702c706318e0`](https://sepolia.etherscan.io/address/0x23f47e4f855b2e4f1bbd8815b333702c706318e0)
-- **Current Counter Value**: 25 (execution proof)
+- **TestToken ERC20**: [`0x0566F0CD850220DF2806E3100cc6029144af7041`](https://sepolia.etherscan.io/address/0x0566F0CD850220DF2806E3100cc6029144af7041)
+
+### Current State
+- **Counter Value**: 25 (execution proof)
+- **3/3 UserOperations** implemented (3 required + 1 bonus)
 
 ## Quick Start
 
