@@ -192,14 +192,14 @@ Safe 1/1 ([0xA99187fbBdbE75AD71710830B29d8a0a3eE90d17](https://sepolia.etherscan
 
 ## Major Challenges Encountered and Resolved
 
-### 1. Safe ProtocolKit - Initial Deployment Nightmare
+### 1. Safe ProtocolKit - Initial Deployment Challenges
 
 **Problem**: Safe ProtocolKit SDK had severe compatibility issues
 - Import errors and breaking changes between versions
 - Inconsistent export patterns
 - API changes that broke existing code
 
-**Impact**: Safe deployment was impossible for 2 days
+**Impact**: Safe deployment was significantly delayed
 - Multiple deployment attempts failed
 - Time wasted on debugging SDK issues
 - Project timeline significantly delayed
@@ -209,7 +209,7 @@ Safe 1/1 ([0xA99187fbBdbE75AD71710830B29d8a0a3eE90d17](https://sepolia.etherscan
 - Used raw contract interactions instead of SDK abstractions
 - Implemented multiple validation layers for address extraction
 
-**Lesson Learned**: Official SDKs can be unstable and unreliable. Always have a fallback plan and don't trust documentation blindly.
+**Lesson Learned**: SDK ecosystems evolve rapidly in web3. Always implement fallback strategies and validate assumptions through testing rather than relying solely on documentation.
 
 ### 2. Missing ProxyCreation Event - The Ghost Event
 
@@ -242,14 +242,14 @@ for (const log of receipt.logs) {
 
 **Lesson Learned**: Testnet behavior differs from mainnet. Events may not fire reliably, always implement fallback mechanisms.
 
-### 3. Safe4337Pack SDK - Complete Compatibility Failure
+### 3. Safe4337Pack SDK - Compatibility Challenges
 
 **Problem**: Safe4337Pack SDK had severe compatibility issues with ERC20
 - TypeScript errors and type conflicts
 - Rapidly changing APIs between versions
 - Inconsistent behavior across different environments
 
-**Impact**: ERC20 UserOperation implementation was impossible
+**Impact**: ERC20 UserOperation implementation required alternative approach
 - Multiple SDK versions tested without success
 - Significant time wasted on compatibility issues
 - Had to abandon the primary approach
@@ -561,7 +561,7 @@ npm run deploy-safe           # Deploy basic Safe
 ### 1. Web3 Development Reality
 
 **Reality Check**: Web3 development is more complex than documentation suggests
-- SDKs are often unstable and rapidly changing
+- SDKs evolve rapidly in the web3 ecosystem
 - Testnet behavior differs significantly from mainnet
 - Infrastructure constraints can be major blockers
 - Always have multiple implementation approaches ready
