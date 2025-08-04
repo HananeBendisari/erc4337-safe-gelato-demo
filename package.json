@@ -4,7 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fund-safe-token": "npx tsx scripts/fund-safe-with-test-token.ts",
+    "safe4337-sponsored": "npx tsx scripts/safe4337-sponsored.ts",
+    "safe4337-native": "npx tsx scripts/safe4337-native.ts",
+    "safe4337-sponsored-gelato-sdk": "npx tsx scripts/safe4337-sponsored-gelato-sdk.ts",
+    "safe4337-native-gelato-sdk": "npx tsx scripts/safe4337-native-gelato-sdk.ts",
+    "safe4337-sponsored-correct": "npx tsx scripts/safe4337-sponsored-correct.ts",
+    "safe4337-native-correct": "npx tsx scripts/safe4337-native-correct.ts",
+    "safe4337-sponsored-safe-sdk": "npx tsx scripts/safe4337-sponsored-safe-sdk.ts",
+    "safe4337-native-safe-sdk": "npx tsx scripts/safe4337-native-safe-sdk.ts",
+    "safe4337-erc20-starter": "npx tsx scripts/safe4337-erc20-starter-kit.ts",
+    "test-safe-4337-pack": "npx tsx scripts/test-safe-4337-pack.ts",
+    "get-funds": "npx tsx scripts/get-funds.ts",
+    "check-safe-modules": "npx tsx scripts/check-safe-modules-deployed.ts",
+    "run-all": "npx tsx scripts/run-all-endpoints.ts",
+    "create-safe-4337": "npx tsx scripts/create-safe-with-4337.ts",
+    "final-status-complete": "npx tsx scripts/final-status-complete.ts"
   },
   "repository": {
     "type": "git",
@@ -19,18 +34,32 @@
   },
   "homepage": "https://github.com/HananeBendisari/erc4337-safe-gelato-demo#readme",
   "dependencies": {
+    "@account-abstraction/sdk": "^0.6.0",
+    "@gelatonetwork/smartwallet": "^0.0.21",
     "@safe-global/protocol-kit": "^6.1.0",
+    "@safe-global/relay-kit": "^4.0.5",
     "@safe-global/safe-core-sdk": "^3.3.5",
+    "@safe-global/safe-core-sdk-types": "^5.1.0",
+    "@safe-global/safe-deployments": "^1.37.40",
+    "@safe-global/sdk-starter-kit": "^3.0.0",
+    "@safe-global/types-kit": "^1.0.0",
     "axios": "^1.11.0",
     "chalk": "^5.4.1",
     "dotenv": "^17.2.1",
-    "ethers": "^5.8.0",
     "figlet": "^1.8.2",
     "prompts": "^2.4.2",
     "viem": "^2.33.2"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@openzeppelin/contracts": "^5.4.0",
+    "@types/mocha": "^10.0.10",
     "@types/node": "^24.1.0",
+    "chai": "^5.2.1",
+    "ethers": "5.7.2",
+    "hardhat": "^2.26.1",
+    "hardhat-deploy": "^1.0.4",
+    "hardhat-deploy-ethers": "^0.4.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
