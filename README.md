@@ -1,5 +1,12 @@
 # ERC-4337 Safe Gelato Demo
 
+[![ERC-4337](https://img.shields.io/badge/ERC--4337-Ready-blue)](https://eips.ethereum.org/EIPS/eip-4337)
+[![Gelato](https://img.shields.io/badge/Gelato-Bundler-green)](https://docs.gelato.network/)
+[![Safe](https://img.shields.io/badge/Safe-1%2F1-orange)](https://docs.safe.global/)
+[![Status](https://img.shields.io/badge/Status-Complete-success)](https://github.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
+
 A complete implementation of ERC-4337 (Account Abstraction) using Safe 1/1 with ERC4337 module and Gelato Bundler integration. This project demonstrates three types of UserOperations: Sponsored (1Balance), Native ETH, and ERC20 token payments.
 
 ## Project Status
@@ -51,6 +58,26 @@ npm run test-safe-4337-pack              # Safe4337Pack compatibility test
 ```
 
 ## Architecture
+
+### System Overview
+
+```mermaid
+graph TD
+    A[User] --> B[Safe 1/1 Account]
+    B --> C[ERC-4337 Module]
+    C --> D[UserOperation]
+    D --> E[Gelato Bundler]
+    E --> F[EntryPoint Contract]
+    F --> G[Counter Contract]
+    
+    H[Gelato 1Balance] --> E
+    I[ERC20 Token] --> E
+    
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style E fill:#e8f5e8
+    style G fill:#f3e5f5
+```
 
 ### Key Features
 - **Safe 1/1 with ERC4337 Module** - Native Safe account abstraction
@@ -136,6 +163,40 @@ This project demonstrates:
 - **Code Quality**: TypeScript with full type safety
 
 **On-chain proof**: See **[TRANSACTIONS.md](./TRANSACTIONS.md)** for all deployed contracts and transaction history.
+
+## Common Errors & Solutions
+
+### "AA20 account not deployed"
+- **Cause**: Safe 4337 module not properly deployed or initialized
+- **Solution**: Use SDK examples that create new accounts, or verify Safe deployment
+
+### "Too Many Requests" from Infura
+- **Cause**: Rate limiting on RPC endpoint
+- **Solution**: Use alternative RPC providers or implement retry logic
+
+### "Invalid query parameters" for ERC20
+- **Cause**: API configuration issues with Gelato Paymaster
+- **Solution**: Use Safe Starter Kit SDK for ERC20 UserOperations
+
+### "Safe4337Pack not found"
+- **Cause**: SDK compatibility issues
+- **Solution**: Use alternative SDKs (Gelato Smart Wallet SDK, Safe Starter Kit)
+
+## Known Limitations
+
+- **No UserOperation Batching** - Each UserOperation is sent individually
+- **No Custom Paymaster** - Uses Gelato's 1Balance and Safe Starter Kit paymasters
+- **No Local Bundler** - Relies on Gelato's hosted bundler service
+- **Limited Account Types** - Focuses on Safe 1/1, not Kernel or other account types
+- **Testnet Only** - Deployed on Sepolia testnet for demonstration purposes
+
+## Future Improvements
+
+- **UserOperation Batching** - Implement batch UserOperations for gas efficiency
+- **Custom Paymaster** - Deploy and configure custom paymaster contracts
+- **Local Bundler** - Set up local bundler for development and testing
+- **Multiple Account Types** - Support Kernel, Biconomy, and other account types
+- **Production Deployment** - Deploy on mainnet with proper security measures
 
 ---
 
