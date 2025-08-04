@@ -3,6 +3,7 @@
 [![ERC-4337](https://img.shields.io/badge/ERC--4337-Ready-blue)](https://eips.ethereum.org/EIPS/eip-4337)
 [![Gelato](https://img.shields.io/badge/Gelato-Bundler-green)](https://docs.gelato.network/)
 [![Safe](https://img.shields.io/badge/Safe-1%2F1-orange)](https://docs.safe.global/)
+[![Solidity](https://img.shields.io/badge/Solidity-0.8.19-red)](https://docs.soliditylang.org/)
 [![Status](https://img.shields.io/badge/Status-Complete-success)](https://github.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
@@ -133,15 +134,31 @@ graph TD
 
 ## Sources & Inspiration
 
-### Official Gelato Documentation
-- **[Gelato Smart Wallets Documentation](https://docs.gelato.cloud/Smart-Wallets/introduction/Overview)** - Official Gelato Smart Wallets guide covering EIP-7702 and ERC-4337 standards
-- **[Gelato Bundler API Endpoints](https://github.com/gelatodigital/how-to-use-bundler-api-endpoints)** - Comprehensive collection of scripts demonstrating Gelato's Account Abstraction bundler API endpoints
+### Official Gelato Documentation & Resources
+- **[Gelato Smart Wallets Documentation](https://docs.gelato.cloud/Smart-Wallets/introduction/Overview)** - Official guide covering EIP-7702 and ERC-4337 standards
+- **[Gelato Smart Wallet SDK Examples](https://github.com/gelatodigital/how-tos-1-smartwallet-sdk-examples)** - Comprehensive examples for Safe, Kernel, and custom smart wallets
+- **[Gelato Bundler API Endpoints](https://github.com/gelatodigital/how-to-use-bundler-api-endpoints)** - Complete collection of scripts demonstrating Gelato's Account Abstraction bundler API endpoints
+- **[Gelato Documentation](https://docs.gelato.network/)** - Complete Gelato infrastructure documentation
+- **[Gelato Smart Wallet SDK](https://docs.gelato.cloud/Smart-Wallets/SDK/)** - Official SDK for smart wallet integration
+- **[Gelato Community](https://discord.gg/gelato)** - Discord community for support and discussions
 
-### Key Resources Used
-- **ERC-4337 Specification** - Account Abstraction standard
-- **Safe Documentation** - Safe 1/1 deployment and configuration
-- **Gelato 1Balance** - Gas sponsorship mechanism
-- **Viem Documentation** - Ethereum client and utilities
+### Key Gelato Examples Referenced
+The [Gelato Smart Wallet SDK Examples](https://github.com/gelatodigital/how-tos-1-smartwallet-sdk-examples) repository provided crucial implementation patterns for:
+- **Safe-sponsored transactions** - Direct inspiration for our Safe 1/1 implementation
+- **Native payment methods** - Gas estimation and transaction patterns
+- **ERC20 token payments** - Token transfer implementations
+- **Gas estimation techniques** - Pre-transaction cost analysis
+
+The [Gelato Bundler API Endpoints](https://github.com/gelatodigital/how-to-use-bundler-api-endpoints) repository demonstrated:
+- **Direct bundler integration** - Manual UserOperation construction
+- **API endpoint usage** - Proper request formatting and error handling
+- **Chain configuration** - Multi-network support patterns
+
+### Additional Resources
+- **[ERC-4337 Specification](https://eips.ethereum.org/EIPS/eip-4337)** - Official Account Abstraction standard
+- **[Safe Documentation](https://docs.safe.global/)** - Safe 1/1 deployment and configuration
+- **[Viem Documentation](https://viem.sh/)** - TypeScript interface for Ethereum
+- **[Ethers.js Documentation](https://docs.ethers.org/)** - JavaScript library for Ethereum
 
 ## DevRel Value
 
