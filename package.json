@@ -17,6 +17,7 @@
     "test-safe-4337-pack": "npx tsx scripts/test-safe-4337-pack.ts",
     "get-funds": "npx tsx scripts/get-funds.ts",
     "check-safe-modules": "npx tsx scripts/check-safe-modules-deployed.ts",
+    "check-safe-4337-status": "npx tsx scripts/check-safe-4337-status.ts",
     "run-all": "npx tsx scripts/run-all-endpoints.ts",
     "create-safe-4337": "npx tsx scripts/create-safe-with-4337.ts",
     "final-status-complete": "npx tsx scripts/final-status-complete.ts"

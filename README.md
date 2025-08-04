@@ -48,7 +48,7 @@ RPC_URL=https://sepolia.infura.io/... # Sepolia RPC URL
 GELATO_API_KEY=your_gelato_api_key   # For sponsored transactions
 ```
 
-**Detailed setup guide**: See **[ENV_SETUP.md](./ENV_SETUP.md)** for complete environment configuration instructions.
+**Detailed setup guide**: See **[docs/ENV_SETUP.md](./docs/ENV_SETUP.md)** for complete environment configuration instructions.
 
 ### Run UserOperations
 ```bash
@@ -95,7 +95,7 @@ graph TD
 - **Multiple SDK Integration** - Demonstrates architectural flexibility
 - **TypeScript** - Full type safety and modern development practices
 
-**Architectural decisions**: See **[ARCHITECTURAL_DECISIONS.md](./ARCHITECTURAL_DECISIONS.md)** for detailed rationale behind technology choices.
+**Architectural decisions**: See **[docs/ARCHITECTURAL_DECISIONS.md](./docs/ARCHITECTURAL_DECISIONS.md)** for detailed rationale behind technology choices.
 
 ### Working UserOperations (3/3 Required + 1 Bonus)
 
@@ -120,23 +120,23 @@ graph TD
 - **Demonstrates**: Multiple implementation strategies
 - **Value**: Shows flexibility in ERC-4337 integration approaches
 
-**Technical details**: See **[TECHNICAL_DETAILS.md](./TECHNICAL_DETAILS.md)** for implementation specifics and **[SCRIPT_ARCHITECTURE.md](./SCRIPT_ARCHITECTURE.md)** for script organization.
+**Technical details**: See **[docs/TECHNICAL_DETAILS.md](./docs/TECHNICAL_DETAILS.md)** for implementation specifics and **[docs/SCRIPT_ARCHITECTURE.md](./docs/SCRIPT_ARCHITECTURE.md)** for script organization.
 
 ## Documentation
 
 ### Core Documentation
 *   **[README.md](./README.md)** - Project overview and quick start guide
-*   **[SUBMISSION_REPORT.md](./SUBMISSION_REPORT.md)** - Complete project report with challenges, solutions, and lessons learned
-*   **[TECHNICAL_DETAILS.md](./TECHNICAL_DETAILS.md)** - Technical analysis and implementation details
-*   **[TRANSACTIONS.md](./TRANSACTIONS.md)** - Transaction history and contract addresses
+*   **[docs/SUBMISSION_REPORT.md](./docs/SUBMISSION_REPORT.md)** - Complete project report with challenges, solutions, and lessons learned
+*   **[docs/TECHNICAL_DETAILS.md](./docs/TECHNICAL_DETAILS.md)** - Technical analysis and implementation details
+*   **[docs/TRANSACTIONS.md](./docs/TRANSACTIONS.md)** - Transaction history and contract addresses
 
 ### Architecture & Decisions
-*   **[ARCHITECTURAL_DECISIONS.md](./ARCHITECTURAL_DECISIONS.md)** - Key architectural decisions and rationale
-*   **[SCRIPT_ARCHITECTURE.md](./SCRIPT_ARCHITECTURE.md)** - Script organization and factorization choices
-*   **[SCRIPT_STATUS.md](./SCRIPT_STATUS.md)** - Status of all scripts (functional, failed, legacy)
+*   **[docs/ARCHITECTURAL_DECISIONS.md](./docs/ARCHITECTURAL_DECISIONS.md)** - Key architectural decisions and rationale
+*   **[docs/SCRIPT_ARCHITECTURE.md](./docs/SCRIPT_ARCHITECTURE.md)** - Script organization and factorization choices
+*   **[docs/SCRIPT_STATUS.md](./docs/SCRIPT_STATUS.md)** - Status of all scripts (functional, failed, legacy)
 
 ### Setup & Configuration
-*   **[ENV_SETUP.md](./ENV_SETUP.md)** - Environment configuration guide
+*   **[docs/ENV_SETUP.md](./docs/ENV_SETUP.md)** - Environment configuration guide
 
 ## Sources & Inspiration
 
@@ -175,7 +175,7 @@ This project demonstrates:
 - **Documentation Quality** - Professional documentation standards
 - **Code Organization** - Clean, maintainable architecture
 
-**Complete analysis**: See **[SUBMISSION_REPORT.md](./SUBMISSION_REPORT.md)** for comprehensive project analysis, challenges encountered, and lessons learned.
+**Complete analysis**: See **[docs/SUBMISSION_REPORT.md](./docs/SUBMISSION_REPORT.md)** for comprehensive project analysis, challenges encountered, and lessons learned.
 
 ## Project Metrics
 
@@ -185,7 +185,7 @@ This project demonstrates:
 - **Documentation**: 8 comprehensive documents
 - **Code Quality**: TypeScript with full type safety
 
-**On-chain proof**: See **[TRANSACTIONS.md](./TRANSACTIONS.md)** for all deployed contracts and transaction history.
+**On-chain proof**: See **[docs/TRANSACTIONS.md](./docs/TRANSACTIONS.md)** for all deployed contracts and transaction history.
 
 ## Common Errors & Solutions
 
