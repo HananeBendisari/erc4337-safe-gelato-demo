@@ -57,7 +57,7 @@ npm run safe4337-sponsored-gelato-sdk    # Sponsored (Gelato pays gas)
 npm run safe4337-native-gelato-sdk       # Native (Safe pays gas)
 npm run safe4337-erc20-starter           # ERC20 (Safe pays with tokens)
 
-# Deployed Safe Implementation (1/3 Functional)
+# Deployed Safe Implementation (3/3 Functional)
 npm run safe4337-sponsored-correct       # Sponsored with deployed Safe 1/1
 
 # Technical Bonus
