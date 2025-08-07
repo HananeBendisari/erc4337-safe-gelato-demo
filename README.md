@@ -101,11 +101,11 @@ graph TD
 
 #### Primary Implementation (3/3 Functional)
 1. **Sponsored** - ✅ Gelato 1Balance pays gas fees (Gelato SDK creates new Safe)
-   - **Transaction**: [0x7fd37d06bf8f7683f8cb9523da9eb228aec2c90d092f105f3060dba9e3aeb3e1](https://sepolia.etherscan.io/tx/0x7fd37d06bf8f7683f8cb9523da9eb228aec2c90d092f105f3060dba9e3aeb3e1)
+   - **Transaction**: [0x7fd37d06bf8f7683f8cb9523da9eb228aec2c90d092f105f3060dba9e3aeb3e1](https://sepolia.etherscan.io/tx/0x7fd37d06bf8f7683f8cb9523da9eb228aec2c90d092f105f3060dba9e3aeb3e1) - Script: [`safe4337-sponsored.ts`](./scripts/safe4337-sponsored.ts)
 2. **Native** - ✅ Safe 1/1 pays gas fees directly (Gelato SDK creates new account)
-   - **Transaction**: [0xb6293dec1600a90bf3a34ae902bc03c55730bd12154ea6fefa2fbcab766d9b16](https://sepolia.etherscan.io/tx/0xb6293dec1600a90bf3a34ae902bc03c55730bd12154ea6fefa2fbcab766d9b16)
+   - **Transaction**: [0xb6293dec1600a90bf3a34ae902bc03c55730bd12154ea6fefa2fbcab766d9b16](https://sepolia.etherscan.io/tx/0xb6293dec1600a90bf3a34ae902bc03c55730bd12154ea6fefa2fbcab766d9b16) - Script: [`safe4337-native.ts`](./scripts/safe4337-native.ts)
 3. **ERC20** - ✅ Safe 1/1 pays gas fees using ERC20 tokens (Safe Starter Kit creates new Safe)
-   - **Transaction**: [0x0bbd43ef1827ee87e21a5cd64a9b2a7ba0b84836e55809b8ffcc01f17ae2e260](https://sepolia.etherscan.io/tx/0x0bbd43ef1827ee87e21a5cd64a9b2a7ba0b84836e55809b8ffcc01f17ae2e260)
+   - **Transaction**: [0x0bbd43ef1827ee87e21a5cd64a9b2a7ba0b84836e55809b8ffcc01f17ae2e260](https://sepolia.etherscan.io/tx/0x0bbd43ef1827ee87e21a5cd64a9b2a7ba0b84836e55809b8ffcc01f17ae2e260) - Script: [`safe4337-erc20-starter-kit.ts`](./scripts/safe4337-erc20-starter-kit.ts)
 
 #### Deployed Safe Implementation (1/3 Functional)
 1. **Sponsored** - ✅ [0xdda74feb34c6554102a6c93e4080f89be6df50f9fb839e66d210aaa9d20f2895](https://sepolia.etherscan.io/tx/0xdda74feb34c6554102a6c93e4080f89be6df50f9fb839e66d210aaa9d20f2895) (Safe deployment transaction)
