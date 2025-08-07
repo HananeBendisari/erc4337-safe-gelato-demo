@@ -17,7 +17,7 @@ A complete implementation of ERC-4337 (Account Abstraction) using Safe 1/1 with 
 ## Deployed Contracts
 
 ### Core Contracts
-- **Safe 1/1 with ERC4337 module**: [`0xA99187fbBdbE75AD71710830B29d8a0a3eE90d17`](https://sepolia.etherscan.io/address/0xA99187fbBdbE75AD71710830B29d8a0a3eE90d17)
+- **Safe 1/1 with ERC4337 module**: [`0x5C98f6c1eB52D20d7720F5Ae93603F2E7dbcCdF8`](https://sepolia.etherscan.io/address/0x5C98f6c1eB52D20d7720F5Ae93603F2E7dbcCdF8)
 - **Counter Contract**: [`0x23f47e4f855b2e4f1bbd8815b333702c706318e0`](https://sepolia.etherscan.io/address/0x23f47e4f855b2e4f1bbd8815b333702c706318e0)
 - **TestToken ERC20**: [`0x0566F0CD850220DF2806E3100cc6029144af7041`](https://sepolia.etherscan.io/address/0x0566F0CD850220DF2806E3100cc6029144af7041)
 
@@ -107,8 +107,8 @@ graph TD
 3. **ERC20** - ✅ Safe 1/1 pays gas fees using ERC20 tokens (Safe Starter Kit creates new Safe)
    - **Transaction**: [0x0bbd43ef1827ee87e21a5cd64a9b2a7ba0b84836e55809b8ffcc01f17ae2e260](https://sepolia.etherscan.io/tx/0x0bbd43ef1827ee87e21a5cd64a9b2a7ba0b84836e55809b8ffcc01f17ae2e260)
 
-#### Deployed Safe Implementation (0/3 Functional)
-1. **Sponsored** - ❌ Failed due to Safe 4337 module configuration issues
+#### Deployed Safe Implementation (1/3 Functional)
+1. **Sponsored** - ✅ [0xdda74feb34c6554102a6c93e4080f89be6df50f9fb839e66d210aaa9d20f2895](https://sepolia.etherscan.io/tx/0xdda74feb34c6554102a6c93e4080f89be6df50f9fb839e66d210aaa9d20f2895) (Safe deployment transaction)
 2. **Native** - ❌ Failed due to Safe 4337 module deployment issues
 3. **ERC20** - ❌ Failed due to API configuration issues
 
