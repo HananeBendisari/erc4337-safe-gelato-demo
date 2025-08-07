@@ -60,7 +60,7 @@ async function main() {
   console.log(`Contract deployed at: ${deployedAddress}`);
 
   // Save the deployed address to a local file
-  writeFileSync("deployed-counter.txt", deployedAddress!);
+  writeFileSync("docs/deployed-counter.txt", deployedAddress!);
 }
 
 // Run the script

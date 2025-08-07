@@ -176,16 +176,16 @@ const publicClient = createStandardPublicClient();
 **Before** (duplicated):
 ```typescript
 // In each script
-const counterAddress = readFileSync('deployed-counter.txt', "utf-8").trim();
-const safeAddress = readFileSync('deployed-safe-with-4337.txt', "utf-8").trim();
+const counterAddress = readFileSync('docs/deployed-counter.txt', "utf-8").trim();
+const safeAddress = readFileSync('docs/deployed-safe-with-4337.txt', "utf-8").trim();
 ```
 
 **After** (centralized):
 ```typescript
 // src/utils/common.ts
 export function getDeployedAddresses(): DeployedAddresses {
-  const counterAddress = readFileSync('deployed-counter.txt', "utf-8").trim();
-  const safeAddress = readFileSync('deployed-safe-with-4337.txt', "utf-8").trim();
+  const counterAddress = readFileSync('docs/deployed-counter.txt', "utf-8").trim();
+const safeAddress = readFileSync('docs/deployed-safe-with-4337.txt', "utf-8").trim();
   
   return {
     counter: counterAddress as Address,

@@ -154,7 +154,7 @@ async function main() {
     console.log("Safe funded!");
 
     // Save address
-    writeFileSync("deployed-safe-with-4337.txt", expectedSafeAddress);
+    writeFileSync("docs/deployed-safe-with-4337.txt", expectedSafeAddress);
     
     console.log("\nSafe with 4337 module created successfully!");
     console.log("Safe address:", expectedSafeAddress);

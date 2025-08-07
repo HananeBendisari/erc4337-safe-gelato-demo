@@ -2,10 +2,10 @@
 
 [![ERC-4337](https://img.shields.io/badge/ERC--4337-Ready-blue)](https://eips.ethereum.org/EIPS/eip-4337)
 [![Gelato](https://img.shields.io/badge/Gelato-Bundler-green)](https://docs.gelato.network/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 [![Safe](https://img.shields.io/badge/Safe-1%2F1-orange)](https://docs.safe.global/)
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.19-red)](https://docs.soliditylang.org/)
 [![Status](https://img.shields.io/badge/Status-Complete-success)](https://github.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 
 A complete implementation of ERC-4337 (Account Abstraction) using Safe 1/1 with ERC4337 module and Gelato Bundler integration. This project demonstrates three types of UserOperations: Sponsored (1Balance), Native ETH, and ERC20 token payments.
@@ -101,11 +101,14 @@ graph TD
 
 #### Primary Implementation (3/3 Functional)
 1. **Sponsored** - ✅ Gelato 1Balance pays gas fees (Gelato SDK creates new Safe)
+   - **Transaction**: [0x7fd37d06bf8f7683f8cb9523da9eb228aec2c90d092f105f3060dba9e3aeb3e1](https://sepolia.etherscan.io/tx/0x7fd37d06bf8f7683f8cb9523da9eb228aec2c90d092f105f3060dba9e3aeb3e1)
 2. **Native** - ✅ Safe 1/1 pays gas fees directly (Gelato SDK creates new account)
+   - **Transaction**: [0xb6293dec1600a90bf3a34ae902bc03c55730bd12154ea6fefa2fbcab766d9b16](https://sepolia.etherscan.io/tx/0xb6293dec1600a90bf3a34ae902bc03c55730bd12154ea6fefa2fbcab766d9b16)
 3. **ERC20** - ✅ Safe 1/1 pays gas fees using ERC20 tokens (Safe Starter Kit creates new Safe)
+   - **Transaction**: [0x0bbd43ef1827ee87e21a5cd64a9b2a7ba0b84836e55809b8ffcc01f17ae2e260](https://sepolia.etherscan.io/tx/0x0bbd43ef1827ee87e21a5cd64a9b2a7ba0b84836e55809b8ffcc01f17ae2e260)
 
-#### Deployed Safe Implementation (1/3 Functional)
-1. **Sponsored** - ✅ Uses the deployed Safe 1/1 (direct API approach)
+#### Deployed Safe Implementation (0/3 Functional)
+1. **Sponsored** - ❌ Failed due to Safe 4337 module configuration issues
 2. **Native** - ❌ Failed due to Safe 4337 module deployment issues
 3. **ERC20** - ❌ Failed due to API configuration issues
 

@@ -18,8 +18,8 @@ async function main() {
   console.log("");
 
   // Read deployed addresses
-  const counterAddress = readFileSync('deployed-counter.txt', 'utf-8').trim();
-  const safeAddress = readFileSync('deployed-safe-with-4337.txt', 'utf-8').trim();
+  const counterAddress = readFileSync('docs/deployed-counter.txt', 'utf-8').trim();
+const safeAddress = readFileSync('docs/deployed-safe-with-4337.txt', 'utf-8').trim();
 
   console.log("Deployed Contracts:");
   console.log("  Counter:", counterAddress);

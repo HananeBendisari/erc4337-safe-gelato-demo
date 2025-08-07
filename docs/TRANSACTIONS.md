@@ -54,7 +54,7 @@ This document provides a comprehensive view of all on-chain transactions and con
 - **Target**: Counter contract increment function
 - **Gas Payment**: Gelato 1Balance sponsorship
 - **Status**: Successfully implemented and tested
-- **Transaction**: [`0x6db49b553efc54902585a074b5141009ecd5e99b1fe1341bb945b33d3b640bc9`](https://sepolia.etherscan.io/tx/0x6db49b553efc54902585a074b5141009ecd5e99b1fe1341bb945b33d3b640bc9)
+- **Transaction**: [0x7fd37d06bf8f7683f8cb9523da9eb228aec2c90d092f105f3060dba9e3aeb3e1](https://sepolia.etherscan.io/tx/0x7fd37d06bf8f7683f8cb9523da9eb228aec2c90d092f105f3060dba9e3aeb3e1)
 - **Evidence**: Counter value increased successfully
 
 ### Native UserOperation (Gelato SDK)
@@ -62,16 +62,16 @@ This document provides a comprehensive view of all on-chain transactions and con
 - **Target**: Counter contract increment function
 - **Gas Payment**: Smart account ETH balance
 - **Status**: Successfully implemented and tested
-- **Transaction**: [`0x81cc702d7fcc67ae2413b8793427db408a7c7b6b13525f918e15a78e311eacba`](https://sepolia.etherscan.io/tx/0x81cc702d7fcc67ae2413b8793427db408a7c7b6b13525f918e15a78e311eacba)
+- **Transaction**: [0xb6293dec1600a90bf3a34ae902bc03c55730bd12154ea6fefa2fbcab766d9b16](https://sepolia.etherscan.io/tx/0xb6293dec1600a90bf3a34ae902bc03c55730bd12154ea6fefa2fbcab766d9b16)
 - **Evidence**: Counter value increased successfully
 
-### Sponsored UserOperation (Gelato API)
+### Sponsored UserOperation (Gelato API) - FAILED
 - **Type**: Sponsored transaction via Gelato Bundler API
 - **Target**: Counter contract increment function
 - **Gas Payment**: Gelato 1Balance sponsorship
-- **Status**: Successfully implemented and tested
-- **Transaction**: [`0x7c80854a149bed8e3989599384f56558923a4d944f34a889fc2f630c97d627b6`](https://sepolia.etherscan.io/tx/0x7c80854a149bed8e3989599384f56558923a4d944f34a889fc2f630c97d627b6)
-- **Evidence**: Counter value increased successfully
+- **Status**: FAILED - Safe4337Module configuration issues
+- **Note**: UserOperation sent but failed due to missing signature and incorrect nonce
+- **Evidence**: UserOperation hash generated but transaction not confirmed due to configuration errors
 
 ### Native UserOperation (Legacy - Configuration Only)
 - **Type**: Native ETH gas payment (legacy implementation)
@@ -85,7 +85,7 @@ This document provides a comprehensive view of all on-chain transactions and con
 - **Target**: Counter contract increment function
 - **Gas Payment**: ERC-20 tokens via Safe Starter Kit (no custom paymaster deployed)
 - **Status**: Successfully implemented with Safe Starter Kit
-- **Transaction**: [`0xd3237d2000f0b89f1bddee75eb5e53c3d809f6f657f58a4c6f362a7cd546e746`](https://sepolia.etherscan.io/tx/0xd3237d2000f0b89f1bddee75eb5e53c3d809f6f657f58a4c6f362a7cd546e746)
+- **Transaction**: [0x0bbd43ef1827ee87e21a5cd64a9b2a7ba0b84836e55809b8ffcc01f17ae2e260](https://sepolia.etherscan.io/tx/0x0bbd43ef1827ee87e21a5cd64a9b2a7ba0b84836e55809b8ffcc01f17ae2e260)
 - **Note**: External RPC rate limit affecting confirmation
 - **Implementation Choice**: Used Safe Starter Kit SDK instead of custom paymaster deployment
 
@@ -130,7 +130,7 @@ This document provides a comprehensive view of all on-chain transactions and con
 # Current count: 19
 # Verified via direct contract interaction
 # Note: Count reflects successful UserOperation tests
-# Recent hashes: 0x6db49b553efc54902585a074b5141009ecd5e99b1fe1341bb945b33d3b640bc9, 0x81cc702d7fcc67ae2413b8793427db408a7c7b6b13525f918e15a78e311eacba
+# Recent hashes: 0x7fd37d06bf8f7683f8cb9523da9eb228aec2c90d092f105f3060dba9e3aeb3e1, 0xb6293dec1600a90bf3a34ae902bc03c55730bd12154ea6fefa2fbcab766d9b16, 0x0bbd43ef1827ee87e21a5cd64a9b2a7ba0b84836e55809b8ffcc01f17ae2e260, 0xba58873cbdbedc4c682f31bff588331b65b74ac2428a806ce594dd269b949dc8
 ```
 
 ### Safe Contract Verification
